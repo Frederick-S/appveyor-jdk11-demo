@@ -1,4 +1,6 @@
 image: Visual Studio 2019
 build: off
+before_test:
+  - java -version
 test_script:
   - mvn compile
