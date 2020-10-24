@@ -1,6 +1,8 @@
 image: Visual Studio 2019
 build: off
 before_test:
+  - SET JAVA_HOME=C:\Program Files\Java\jdk11
+  - SET PATH=%JAVA_HOME%\bin;%PATH%
   - java -version
 test_script:
   - mvn compile
